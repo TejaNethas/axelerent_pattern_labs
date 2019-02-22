@@ -1,0 +1,28 @@
+{
+    "sectionTitle" : "Section Title",
+    "toutSection" : {
+        "styleModifier" : "l-grid--3up"
+    },
+    "latestPosts" : {
+        "styleModifier" : "l-grid l-grid--3up",
+        "stackedBlockList" : [
+            {
+                "styleModifier" : ""
+            },
+            {
+                "styleModifier" : ""
+            },
+            {
+                "styleModifier" : ""
+            }
+        ]
+    },
+    "totalPrice" : true,
+    "checkoutButton" : true,
+    "stackedBlockSection" : {
+        "styleModifier" : "l-grid l-grid--3up"
+    },
+    "selectSection" : true,
+    "priceSection" : true,
+    "addToCart" : true
+}

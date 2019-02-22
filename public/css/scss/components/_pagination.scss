@@ -1,0 +1,33 @@
+/**
+ * Pagination
+ */
+.c-pagination {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+
+.c-pagination__item {
+	border-right: 1px solid $color-gray-15;
+
+	&:last-child {
+		border: 0;
+	}
+}
+
+.c-pagination__link {
+	padding: $pad;
+
+	.c-pagination__item.is-active & {
+		color: $color-brand-blue;
+		font-weight: bold;
+		pointer-events: none;
+	}
+
+	.c-pagination__item.is-disabled & {
+		color: $color-gray-15;
+		pointer-events: none;
+	}
+}

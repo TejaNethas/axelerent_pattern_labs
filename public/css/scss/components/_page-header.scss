@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #PAGE HEADER
+\*------------------------------------*/
+/**
+ * 1) The page header contains the page's heading, as perhaps other page information
+ *    such as description or actions (edit, delete, etc).
+ */
+
+.c-page-header__title {
+	padding: 1rem 0 0.5rem;
+	position: relative;
+	color: $color-gray-73;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}

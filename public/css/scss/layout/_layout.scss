@@ -1,0 +1,200 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/**
+ * Layout container
+ */
+.l {
+	max-width: $l-max-width;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #TEMPLATES
+\*------------------------------------*/
+
+/**
+ * 2 column layout
+ */
+.l--two-col {
+	display: flex;
+	flex-direction: column;
+
+	.l-main {
+		@media all and (min-width: $bp-large) {
+			width: 70%;
+			padding-right: $pad;
+		}
+	}
+
+	/**
+	 * Sidebar
+	 */
+	.l-sidebar {
+
+		@media all and (min-width:$bp-small-3) {
+			display: flex;
+		}
+
+
+		@media all and (min-width: $bp-large) {
+			flex-direction: column;
+			width: 30%;
+			padding: 0 0 0 $pad;
+		}
+	}
+
+	@media all and (min-width: $bp-large) {
+		flex-direction: row;
+	}
+}
+
+
+/*------------------------------------*\
+    #GRIDS
+\*------------------------------------*/
+
+/**
+ * Grid
+ */
+.l-grid {
+	margin: 0 -0.5rem;
+}
+
+/**
+ * Grid item
+ */
+.l-grid__item {
+	display: flex;
+	padding: $pad-half;
+
+	/**
+	 * Grid item within 2-up grid
+	 */
+    .l-grid--2up & {
+
+	    @media all and (min-width: 40em) {
+            width: 50%;
+        }
+    }
+
+	/**
+	 * Grid item within 3-up grid
+     * 1) Added to get rid of bleed of stacked block images on IE on small screens
+	 */
+    .l-grid--3up & {
+
+	    @media all and (min-width: 40em) {
+            width: 50%;
+        }
+
+	    @media all and (min-width: 50em) {
+            width: 33.33333%;
+        }
+    }
+
+	/**
+	* Grid item within 4-up grid
+	*/
+	.l-grid--4up & {
+	   @media all and (min-width: 40em) {
+		   width: 50%;
+	   }
+
+	   @media all and (min-width: 50em) {
+		   width: 33.33333%;
+	   }
+
+	   @media all and (min-width: 60em) {
+		   width: 25%;
+	   }
+	}
+
+	/**
+	* Grid item within 5-up grid
+	*/
+	.l-grid--5up & {
+	   @media all and (min-width: 40em) {
+		   width: 50%;
+	   }
+
+	   @media all and (min-width: 50em) {
+		   width: 33.33333%;
+	   }
+
+	   @media all and (min-width: 60em) {
+		   width: 25%;
+	   }
+
+	   @media all and (min-width: 70em) {
+		   width: 20%;
+	   }
+	}
+}
+
+/**
+ * 2-up grid
+ * 1) These grid items grow from 1-up to 2-up
+ * 2) Display flex and flex wrap used to place items side by side on larger screens and
+ *    wrap items to the next line that don't take up the remaining space
+ */
+.l-grid--2up {
+
+    @media all and (min-width: 40em) {
+        display: flex; /* 2 */
+        flex-wrap: wrap; /* 2 */
+        margin: 0 -0.5rem 1rem;
+    }
+}
+
+
+/**
+ * 3-up grid
+ * 1) These grid items grow from 1-up, to 2-up, to 3-up
+ * 2) Display flex and flex wrap used to place items side by side on larger screens and
+ *    wrap items to the next line that don't take up the remaining space
+ */
+.l-grid--3up {
+
+    @media all and (min-width: 40em) {
+        display: flex; /* 2 */
+        flex-wrap: wrap; /* 2 */
+        margin: 0 -0.5rem 1rem;
+    }
+}
+
+/**
+ * 4-up grid
+ * 1) These grid items grow from 1-up, to 2-up, to 3-up, to 4-up
+ * 2) Display flex and flex wrap used to place items side by side on larger screens and
+ *    wrap items to the next line that don't take up the remaining space
+ */
+.l-grid--4up {
+
+    @media all and (min-width: 40em) {
+        display: flex; /* 2 */
+        flex-wrap: wrap; /* 2 */
+        margin: 0 -0.5rem 1rem;
+    }
+}
+
+/**
+ * 5-up grid
+ * 1) These grid items grow from 1-up, to 2-up, to 3-up, to 4-up, to 5-up
+ * 2) Display flex and flex wrap used to place items side by side on larger screens and
+ *    wrap items to the next line that don't take up the remaining space
+ */
+.l-grid--5up {
+
+    @media all and (min-width: 40em) {
+        display: flex; /* 2 */
+        flex-wrap: wrap; /* 2 */
+        margin: 0 -0.5rem 1rem;
+    }
+}

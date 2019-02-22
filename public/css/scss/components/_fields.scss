@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #FIELDS
+\*------------------------------------*/
+
+.c-field {
+	margin-bottom: 1rem;
+
+	.c-stripe & {
+		text-align: center;
+
+		@media all and (min-width: $bp-small-3) {
+			width: 20%;
+		}
+	}
+}
+
+.c-field__note {
+	font-size: $font-size-small;
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.c-field__input {
+
+	.c-field--small & {
+		padding: 0.25rem;
+	}
+
+	.c-stripe & {
+		max-width: 5rem;
+		text-align: center;
+	}
+}

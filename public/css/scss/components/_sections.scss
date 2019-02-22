@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #SECTIONS
+\*------------------------------------*/
+
+/**
+ * Section
+ */
+.c-section {
+	position: relative;
+	margin: 0 0 $space-double;
+
+	.l-sidebar & {
+		@media all and (min-width: $bp-small-3) {
+			margin-right: 2em;
+			width: 50%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		@media all and (min-width: $bp-large) {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+}
+
+/**
+ * Section title
+ */
+.c-section__title {
+	position: relative;
+	padding: 1rem 0;
+	border-top: 3px solid $color-brand-blue;
+	border-bottom: 3px solid $color-brand-blue;
+	color: $color-gray-73;
+	margin-bottom: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}

@@ -1,0 +1,41 @@
+{
+    "primaryNav" : {
+        "navItems" : [
+            {
+                "url" : "",
+                "label" : ""
+            },
+            {
+                "url" : "",
+                "label" : ""
+            },
+            {
+                "url" : "",
+                "label" : ""
+            },
+            {
+                "styleModifier" : "c-primary-nav__item--highlight",
+                "url" : "",
+                "label" : ""
+            }
+        ]
+    },
+    "footerNav" : [
+        {
+            "url" : "",
+            "label" : ""
+        },
+        {
+            "url" : "",
+            "label" : ""
+        },
+        {
+            "url" : "",
+            "label" : ""
+        },
+        {
+            "url" : "",
+            "label" : ""
+        }
+    ]
+}

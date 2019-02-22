@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+/**
+ * Header
+ */
+.c-header {
+	position: relative;
+	box-shadow: 0px 3px 5px -2px rgba(0,0,0,0.2);
+	padding: 0.5em 0;
+
+	@media all and (min-height: $bp-med) {
+		padding: 1em 0;
+	}
+}
+
+.c-header__inner {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	max-width: $l-max-width;
+}
+
+/**
+ * Header Controls
+ * 1) This container holds the primary nav and search menu
+ */
+.c-header__controls {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+
+.c-header__nav-btn {
+	margin-left: auto;
+	margin-right: 1rem;
+
+	@media all and (min-width: $bp-large) {
+		display: none;
+	}
+}
+
+/**
+ * Search nav toggle button
+ * 1) Specific nav toggle button for the search form
+ */
+.nav-toggle-search {
+	display: block;
+
+	@media all and (min-width: $bp-small-2) {
+		display: none;
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "imgLogoSrc"       : "../../images/logo.svg",
+    "get-in-touch-icon" : "../../images/get-in-touch.png",
+    "service-avthar-1" : "../../images/service-name-1.png",
+    "service-avthar-2" : "../../images/service-name-2.png",
+    "service-avthar-3" : "../../images/service-name-3.png",
+    "scrollbar-down"   : "../../images/scroll-down.png",
+    "our-service-1"    : "../../images/our-service-1.png",
+    "over-the-world"   : "../../images/users-world-map.png"
+}

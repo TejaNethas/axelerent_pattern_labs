@@ -1,0 +1,44 @@
+/*------------------------------------*\
+	#HERO BLOCK
+\*------------------------------------*/
+.c-hero {
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/**
+ * Hero Image
+ * 1) This is the primary hero image that runs full-bleed across the layout
+ */
+.c-hero__img {
+    display: block;
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+/**
+ * Hero Headline
+ * 1) This sits overtop of the hero image when space permits
+ */
+.c-hero__headline {
+    background: $color-dim-50;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    font-size: 2.6rem;
+    transition: all $anim-speed-quick $anim-ease;
+
+    @media all and (min-width: $bp-large) {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        width: 50%;
+    }
+
+    .c-hero:hover &, .c-hero:focus & {
+        background: $color-brand-gray;
+    }
+ }

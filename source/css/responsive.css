@@ -1,0 +1,94 @@
+@media (min-width: 46.8em){
+  .c-primary-nav {
+      display: block;
+      margin-right: 1rem;
+  }
+  .c-primary-nav__list {
+    display: flex;
+}
+}
+
+/*mobile based css start from here*/
+
+@media only screen and (max-width: 600px) {
+    .landing-hero-header {
+    background: url(../images/landing-banner.png) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+.service-block-1, .service-block-2, .service-block-3 {
+    display: flex;
+    align-items: center !important;
+    padding: 1em 1.5em;
+}
+.service-avthar img{
+        width: 70%;
+}
+.landing-hero-hding h1 {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.service-name p{
+padding-left: 1em;
+}
+.our-success-storie-1{
+  display: inline-block !important;
+  text-align: left;
+}
+.our-success-storie-1 img{
+      width: 100%;
+}
+.over-the-world-main {
+    padding: 3em 0em;
+}
+.over-the-world-img img{
+  width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .landing-hero-header {
+    background: url(../images/landing-banner.png) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+.landing-hero-hding h1 {
+    width: 60%;
+    margin: 0 auto;
+}
+.our-success-storie-block{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.our-success-storie-1{
+      display: flex;
+      padding: 1em 0;
+}
+.our-success-story-content {
+    padding: 1em 1em 2em 1em;
+}
+.over-the-world-main{
+  display: block !important;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+   .landing-services-block{
+    display: flex;
+    justify-content: center;
+}
+.our-success-storie-block{
+    display: flex;
+    justify-content: center;
+}
+.over-the-world-main{
+  display: flex;
+}
+}

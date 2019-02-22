@@ -1,0 +1,36 @@
+{
+    "stackedBlockList" : [
+        {
+            "styleModifier" : ""
+        },
+        {
+            "styleModifier" : ""
+        },
+        {
+            "styleModifier" : ""
+        }
+    ],
+    "paginationList" : [
+        {
+            "number" : "Prev"
+        },
+        {
+            "number" : "1"
+        },
+        {
+            "number" : "2"
+        },
+        {
+            "number" : "Next"
+        }
+    ],
+    "stripeList" : [
+        {},
+        {}
+    ],
+    "toutList" : [
+        {},
+        {},
+        {}
+    ]
+}

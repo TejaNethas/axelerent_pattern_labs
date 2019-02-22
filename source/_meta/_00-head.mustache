@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="../" />
+    <link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/responsive.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/fontawesome.min.css?{{ cacheBuster }}" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/slick.css?{{ cacheBuster }}" />
+    <link rel="stylesheet" type="text/css" href="../../css/slick-theme.css?{{ cacheBuster }}"/>
+    <script src="../../js/jquery-3.3.1.min.js?{{ cacheBuster }}" media="all"></script>
+    <script type="text/javascript" src="../../js/slick.min.js?{{ cacheBuster }}" media="all"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+  </script>
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    {{{ patternLabHead }}}
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="{{ bodyClass }}">
+
+  </body>
+  </html>

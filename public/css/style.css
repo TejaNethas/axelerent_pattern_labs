@@ -1,0 +1,229 @@
+/*
+ * YOUR STYLES HERE
+ */
+ *, body{
+   padding: 0;
+   margin: 0;
+ }
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/Poppins-Regular.otf") format("opentype");
+}
+p, ul, a, span, b, strong, button, i, hgroup, h1, h2, h3, h4, h5, h6{
+  font-family: Poppins-Regular !important;
+}
+ ul{
+   padding: 0;
+   list-style-type: none;
+ }
+ a {
+     color: #808080;
+     text-decoration: none;
+     outline: 0;
+     transition: all 0.2s ease;
+ }
+ body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 0px 0;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: transparent;
+}
+.text-center{
+  text-align: center;
+}
+.text-white{
+  color: #fff;
+}
+.ax-header{
+    background: #191514;
+}
+ .c-header {
+     display: flex;
+     align-items: center;
+     padding: 0.5em 3em;
+     box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
+ }
+ .c-logo-link {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.c-logo-link span{
+    color: #ef3b00;
+}
+.c-logo {
+    display: block;
+    max-width: 200px;
+}
+.c-header__controls {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+.nav-toggle {
+    display: block;
+    padding: 0.9rem 1rem 0.7rem;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+.is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.c-primary-nav__list {
+    display: none;
+}
+.c-primary-nav__link {
+    display: block;
+    padding: 1rem;
+}
+
+.c-primary-nav__list{
+  display: -webkit-flex; /* Safari */
+ -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #808080;
+  padding: 1rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #191514;
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #191514;
+  min-width: 160px;
+  z-index: 1;
+  border-top: 5px solid #ef3b00;
+  margin: 0.1em 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #808080;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #191514;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.c-get-in-touch{
+  background: #ef3b00;
+  color: #fff;
+  border-radius: 100px;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+/*Landing-section css start*/
+.service-name a{
+  text-decoration: none;
+}
+.landing-hero-header{
+  background: url(../images/landing-banner.png) no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 100%;
+}
+.landing-hero-hding h1{
+    padding: 4em 0 1em 0;
+    font-size: 2.1em;
+    width: 35%;
+    margin: 0 auto;
+}
+.service-block-1, .service-block-2, .service-block-3{
+    padding: 2em 2em;
+    border-radius: 5px;
+    margin: 1em 0.5em;
+    border: 1px solid #4c4c4c;
+}
+.page-scroll-bar{
+  padding: 8em 0 4em 0;
+}
+.page-scroll-down a{
+    color: #716968;
+    text-decoration: none;
+}
+.scroll-down{
+    vertical-align: sub;
+}
+/*Landing-section css end*/
+
+/*success stories css start*/
+.our-success-stories{
+  background: #f8f6f7;
+  padding: 4em 0;
+}
+.our-success-stories-hding-blog{
+      padding: 0 0 2em 0;
+}
+.our-success-storie-1{
+  justify-content: space-around;
+}
+.our-success-storie-block{
+  padding: 2em;
+}
+.our-success-story-content{
+  padding: 1em 0.5em 2em 0;
+}
+.our-success-storie-1 .our-success-story-content h4{
+  color: #484340;
+}
+.our-success-storie-1 .our-success-story-content p{color: #817370;}
+/*success stories css start*/
+
+/* over the world css start */
+.over-the-world-main{
+  padding: 3em 3em;
+}
+.over-the-world-content{
+  padding: 2em 2em;
+}
+.over-the-world-content h2{
+  padding-bottom: 1em;
+}
+/* over the world css end */
