@@ -1,0 +1,17 @@
+{
+"full-name-id":"c-fullName",
+"email-id":"c-emailId",
+"phonenumber-id":"c-phoneNumber",
+"message-textarea-id":"c-messageTextArea",
+"text-type": "text",
+"email-type": "email",
+"number-type": "number",
+"fullname-placeholder":"Fullname",
+"email-placeholder":"Email Address",
+"phonenumber-placeholder":"Phone Number",
+"textarea-placeholder":"Message in brief",
+"required-field":"required",
+"submit-btn": "Submit",
+"form-submit":"submit",
+"no-of-rows": "6"
+}

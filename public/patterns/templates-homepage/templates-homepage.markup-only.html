@@ -1,11 +1,11 @@
 
 <header class="c-header ax-header">
-	<a href="#" class="c-logo-link">
-		Company <span>Logo</span>
-	</a>
-	<div class="c-header__controls">
-			<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-			<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+	<div class="c-header-xs-block">
+		<div class="text-white"><a href="#" class="d-none-in-mg-lg text-white side-nav-open"><i class="fa fa-bars"></i></a></div>
+		<div><a href="#" class="c-logo-link">Company <span>Logo</span></a></div>
+		<div><a href="#" class="d-none-in-mg-lg"><img src="..&#x2F;..&#x2F;images&#x2F;get-in-touch.png" /></a></div>
+	</div>
+	<div class="c-header__controls d-none-in-xs">
 			<nav id="nav" class="c-primary-nav">
 				<ul class="c-primary-nav__list">
           <li class="c-primary-nav__item">
@@ -50,12 +50,33 @@
             </div>
           </li>
 					<li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link">Blog</a></li>
-					<li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link c-get-in-touch"><span><img src="..&#x2F;..&#x2F;images&#x2F;get-in-touch.png" />
-</span> Get In Touch</a></li>
+					<li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link c-get-in-touch"><span><i class="get-in-touch-icon"></i></span> Get In Touch</a></li>
 				</ul><!--end c-primary-nav__list-->
 			</nav><!--end c-primary-nav-->
-		</div>
+	</div>
+	<div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn side-nav-close"><span><i class="fa fa-times" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-user" aria-hidden="true"></i></span> About</a>
+              <a href="#"><span><i class="fa fa-paper-plane" aria-hidden="true"></i></span> Services</a>
+              <a href="#"><span><i class="fa fa-users" aria-hidden="true"></i></span> Solutions</a>
+              <a href="#"><span><i class="fa fa-address-card-o" aria-hidden="true"></i></span> Blog</a>
+</div>
 </header>
+
+<script>
+$.fn.sidenavOpen = function(){
+	$('#mySidenav').addClass('width-250px');
+}
+$('.side-nav-open').click(function(){
+		$.fn.sidenavOpen();
+});
+$.fn.sidenavClose = function(){
+	$('#mySidenav').removeClass('width-250px');
+}
+$('.side-nav-close').click(function(){
+		$.fn.sidenavClose();
+});
+</script>
 
 <section class="landing-hero-header">
         <div class="landing-hero-hding">
@@ -152,11 +173,161 @@
  </div>
 </section>
 
-<section class="over-the-world">
-  <div class="your-class">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+
+
+<section class="testimonials-block">
+  <div class="testimonials-block-header">
+    <h2 class="text-center">Testimonials</h2>
+  </div>
+  <div class=''>
+  <ul class="testimonials-block autoplay">
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span><img src="..&#x2F;..&#x2F;images&#x2F;quote.png" />
+</span> Mauris at quam at mauris venenatis eleifend. Nullam eleifend odio a pretium dignissim. Aenean non rhoncus quam.</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div><img src="..&#x2F;..&#x2F;images&#x2F;customer-avthar.png" />
+</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">Client Name</p>
+          <p class="testimonials-client-dig">Position, ORG</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span><img src="..&#x2F;..&#x2F;images&#x2F;quote.png" />
+</span> Nunc ut ipsum iacinia ante. Nulla facilisi. Integer lobortis in risus eget volupat. Donec interdum elit eget quam aliquam sodales. Vestibulum auctor auctor finibud.</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div><img src="..&#x2F;..&#x2F;images&#x2F;customer-avthar.png" />
+</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">Client Name</p>
+          <p class="testimonials-client-dig">Position, ORG</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span><img src="..&#x2F;..&#x2F;images&#x2F;quote.png" />
+</span> Mauris id bibendum est. Proin dapibus sollicitudin iaculis. Maecenas condimentum maximus laoreet. In maximus euismodegestas.</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div><img src="..&#x2F;..&#x2F;images&#x2F;customer-avthar.png" />
+</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">Client Name</p>
+          <p class="testimonials-client-dig">Position, ORG</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+$('.autoplay').slick({
+  slide: 'li',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  mobileFirst:true,
+  autoplaySpeed: 2000,
+  responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+          }
+      },
+      {
+          breakpoint: 600,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }
+    ]
+});
+
+
+</script>
+
+<section class="work-with-us-block">
+  <div class="work-with-us-hding-block text-center text-white">
+     <h2>Convinced To Work With Us?</h2>
+     <p>Company has helped agencies keep their promises to clients since 2005.</p>
+  </div>
+  <div class="work-with-us-form-block text-center">
+    <form>
+  <div class="work-with-us-form-inputs">
+    <div class="c-field">
+      <input id="c-fullName" type="text" placeholder="Fullname" required="required" />
+    </div>
+
+    <div class="c-field">
+      <input id="c-emailId" type="email" placeholder="Email Address" required="required" />
+    </div>
+
+    <div class="c-field">
+      <input id="c-phoneNumber" type="number" placeholder="Phone Number" required="required" />
+    </div>
+  </div>
+
+  <div class="work-with-us-form-textarea">
+    <div class="c-field">
+      <textarea id="c-messageTextArea" rows="6"placeholder="Message in brief" required="required"></textarea>
+    </div>
+  </div>
+
+<div class="work-with-us-form-submit-btn">
+  <div class="c-field">
+    <button type="submit" class="c-button c-btn-org">Submit</button>
+  </div>
+</div>
+</form>
+
+  </div>
+</section>
+
+<section class="c-footer">
+  <div class="c-footer-main">
+    <div class="c-footer-rights">
+        © 2017 Company. All Rights Reserved.
+    </div>
+    <div class="c-footer-social-links">
+      <ul class="c-footer-follow-us-ul">
+        <li class="c-footer-follow-us-li">
+          <a href="#" class="c-footer-follow-us-txt">Follow us on:</a>
+        </li>
+        <li class="c-footer-follow-us-li">
+          <a href="#"><img src="..&#x2F;..&#x2F;images&#x2F;icov-fb.png" />
+</a>
+        </li>
+        <li class="c-footer-follow-us-li">
+          <a href="#"><img src="..&#x2F;..&#x2F;images&#x2F;icov-linkedin.png" />
+</a>
+        </li>
+        <li class="c-footer-follow-us-li">
+          <a href="#"><img src="..&#x2F;..&#x2F;images&#x2F;icov-twitter.png" />
+</a>
+        </li>
+        <li class="c-footer-follow-us-li">
+          <a href="#"><img src="..&#x2F;..&#x2F;images&#x2F;icov-cover.png" />
+</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 

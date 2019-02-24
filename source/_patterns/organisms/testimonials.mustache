@@ -1,7 +1,83 @@
-<section class="over-the-world">
-  <div class="your-class">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+
+
+<section class="testimonials-block">
+  <div class="testimonials-block-header">
+    <h2 class="text-center">{{ testimonials-header }}</h2>
+  </div>
+  <div class=''>
+  <ul class="testimonials-block autoplay">
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span>{{> atoms-c_testimonials_quote_icon }}</span> {{ testimonials-quote-1 }}</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div>{{> atoms-c_testimonials_client_avatar }}</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">{{ testimonials-client-name }}</p>
+          <p class="testimonials-client-dig">{{ testimonials-client-dig }}</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span>{{> atoms-c_testimonials_quote_icon }}</span> {{ testimonials-quote-2 }}</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div>{{> atoms-c_testimonials_client_avatar }}</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">{{ testimonials-client-name }}</p>
+          <p class="testimonials-client-dig">{{ testimonials-client-dig }}</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span>{{> atoms-c_testimonials_quote_icon }}</span> {{ testimonials-quote-3 }}</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div>{{> atoms-c_testimonials_client_avatar }}</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">{{ testimonials-client-name }}</p>
+          <p class="testimonials-client-dig">{{ testimonials-client-dig }}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
   </div>
 </section>
+
+
+<script type="text/javascript">
+$('.autoplay').slick({
+  slide: 'li',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  mobileFirst:true,
+  autoplaySpeed: 2000,
+  responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+          }
+      },
+      {
+          breakpoint: 600,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }
+    ]
+});
+
+
+</script>

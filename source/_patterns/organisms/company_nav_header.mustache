@@ -1,11 +1,11 @@
 
 <header class="c-header ax-header">
-	<a href="#" class="c-logo-link">
-		Company <span>Logo</span>
-	</a>
-	<div class="c-header__controls">
-			<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-			<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+	<div class="c-header-xs-block">
+		<div class="text-white"><a href="{{ url }}" class="d-none-in-mg-lg text-white side-nav-open"><i class="fa fa-bars"></i></a></div>
+		<div><a href="{{ url }}" class="c-logo-link">Company <span>Logo</span></a></div>
+		<div><a href="{{ url }}" class="d-none-in-mg-lg"><img src="{{ get-in-touch }}" /></a></div>
+	</div>
+	<div class="c-header__controls d-none-in-xs">
 			<nav id="nav" class="c-primary-nav">
 				<ul class="c-primary-nav__list">
           <li class="c-primary-nav__item">
@@ -50,8 +50,30 @@
             </div>
           </li>
 					<li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link">Blog</a></li>
-					<li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link c-get-in-touch"><span>{{ >atoms-get_in_touch_icon}}</span> Get In Touch</a></li>
+					<li class="c-primary-nav__item"><a href="#" class="c-primary-nav__link c-get-in-touch"><span><i class="get-in-touch-icon"></i></span> Get In Touch</a></li>
 				</ul><!--end c-primary-nav__list-->
 			</nav><!--end c-primary-nav-->
-		</div>
+	</div>
+	<div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn side-nav-close"><span><i class="fa fa-times" aria-hidden="true"></i></span></a>
+              <a href="#"><span><i class="fa fa-user" aria-hidden="true"></i></span> About</a>
+              <a href="#"><span><i class="fa fa-paper-plane" aria-hidden="true"></i></span> Services</a>
+              <a href="#"><span><i class="fa fa-users" aria-hidden="true"></i></span> Solutions</a>
+              <a href="#"><span><i class="fa fa-address-card-o" aria-hidden="true"></i></span> Blog</a>
+</div>
 </header>
+
+<script>
+$.fn.sidenavOpen = function(){
+	$('#mySidenav').addClass('width-250px');
+}
+$('.side-nav-open').click(function(){
+		$.fn.sidenavOpen();
+});
+$.fn.sidenavClose = function(){
+	$('#mySidenav').removeClass('width-250px');
+}
+$('.side-nav-close').click(function(){
+		$.fn.sidenavClose();
+});
+</script>

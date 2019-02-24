@@ -1,10 +1,17 @@
 {
-    "imgLogoSrc"       : "../../images/logo.svg",
-    "get-in-touch-icon" : "../../images/get-in-touch.png",
-    "service-avthar-1" : "../../images/service-name-1.png",
-    "service-avthar-2" : "../../images/service-name-2.png",
-    "service-avthar-3" : "../../images/service-name-3.png",
-    "scrollbar-down"   : "../../images/scroll-down.png",
-    "our-service-1"    : "../../images/our-service-1.png",
-    "over-the-world"   : "../../images/users-world-map.png"
+    "imgLogoSrc"                   : "../../images/logo.svg",
+    "service-avthar-1"             : "../../images/service-name-1.png",
+    "service-avthar-2"             : "../../images/service-name-2.png",
+    "service-avthar-3"             : "../../images/service-name-3.png",
+    "scrollbar-down"               : "../../images/scroll-down.png",
+    "get-in-touch"                 : "../../images/get-in-touch.png",
+    "our-service-1"                : "../../images/our-service-1.png",
+    "over-the-world"               : "../../images/users-world-map.png",
+    "c-footer-fb-link"             : "../../images/icov-fb.png",
+    "c-footer-in-link"             : "../../images/icov-linkedin.png",
+    "c-footer-tw-link"             : "../../images/icov-twitter.png",
+    "c-footer-mail-link"           : "../../images/icov-cover.png",
+    "c-testimonials-bg"            : "../../images/quote-bg.png",
+    "c-testimonials-quote-icon"    : "../../images/quote.png",
+    "c-testimonials-client-avatar" : "../../images/customer-avthar.png"
 }

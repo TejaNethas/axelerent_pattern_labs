@@ -5,23 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="../" />
-    <link rel="stylesheet" href="../../css/style.css?1550836691360" media="all" />
-    <link rel="stylesheet" href="../../css/responsive.css?1550836691360" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1550836691360" media="all" />
-    <link rel="stylesheet" href="../../css/fontawesome.min.css?1550836691360" media="all">
-    <link rel="stylesheet" type="text/css" href="../../css/slick.css?1550836691360" />
-    <link rel="stylesheet" type="text/css" href="../../css/slick-theme.css?1550836691360"/>
-    <script src="../../js/jquery-3.3.1.min.js?1550836691360" media="all"></script>
-    <script type="text/javascript" src="../../js/slick.min.js?1550836691360" media="all"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
-        setting-name: setting-value
-      });
-    });
-  </script>
+    <link rel="stylesheet" href="../../css/style.css?1551032253343" media="all" />
+    <link rel="stylesheet" href="../../css/responsive.css?1551032253343" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1551032253343" media="all" />
+    <link rel="stylesheet" href="../../css/font-awesome.min.css?1551032253343" media="all">
+    <link rel="stylesheet" type="text/css" href="../../css/slick.css?1551032253343" />
+    <link rel="stylesheet" type="text/css" href="../../css/slick-theme.css?1551032253343"/>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <script src="../../js/jquery-3.3.1.min.js?1551032253343" media="all"></script>
+    <script type="text/javascript" src="../../js/slick.min.js?1551032253343" media="all"></script>
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1550836691360" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1551032253343" media="all">
     <!-- End Pattern Lab -->
 
   </head>
@@ -29,17 +23,99 @@
 
   </body>
   </html>
-<section class="over-the-world">
-  <div class="your-class">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
+
+
+<section class="testimonials-block">
+  <div class="testimonials-block-header">
+    <h2 class="text-center">Testimonials</h2>
+  </div>
+  <div class=''>
+  <ul class="testimonials-block autoplay">
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span><img src="..&#x2F;..&#x2F;images&#x2F;quote.png" />
+</span> Mauris at quam at mauris venenatis eleifend. Nullam eleifend odio a pretium dignissim. Aenean non rhoncus quam.</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div><img src="..&#x2F;..&#x2F;images&#x2F;customer-avthar.png" />
+</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">Client Name</p>
+          <p class="testimonials-client-dig">Position, ORG</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span><img src="..&#x2F;..&#x2F;images&#x2F;quote.png" />
+</span> Nunc ut ipsum iacinia ante. Nulla facilisi. Integer lobortis in risus eget volupat. Donec interdum elit eget quam aliquam sodales. Vestibulum auctor auctor finibud.</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div><img src="..&#x2F;..&#x2F;images&#x2F;customer-avthar.png" />
+</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">Client Name</p>
+          <p class="testimonials-client-dig">Position, ORG</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="testimonials-quote-bg">
+        <p class="testimonials-quote-para"><span><img src="..&#x2F;..&#x2F;images&#x2F;quote.png" />
+</span> Mauris id bibendum est. Proin dapibus sollicitudin iaculis. Maecenas condimentum maximus laoreet. In maximus euismodegestas.</p>
+      </div>
+      <div>
+        <div class="testimonials-author-avthar">
+          <div><img src="..&#x2F;..&#x2F;images&#x2F;customer-avthar.png" />
+</div>
+        </div>
+        <div class="testimonials-author-name">
+          <p class="testimonials-client-name">Client Name</p>
+          <p class="testimonials-client-dig">Position, ORG</p>
+        </div>
+      </div>
+    </li>
+  </ul>
   </div>
 </section>
 
+
+<script type="text/javascript">
+$('.autoplay').slick({
+  slide: 'li',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  mobileFirst:true,
+  autoplaySpeed: 2000,
+  responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+          }
+      },
+      {
+          breakpoint: 600,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }
+    ]
+});
+
+
+</script>
+
 <!--DO NOT REMOVE-->
 <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-homepage\\templates-homepage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-homepage\\templates-homepage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms"},"patternExtension":"mustache","patternName":"Testimonials","patternPartial":"organisms-testimonials","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-c_testimonials_quote_icon","lineagePath":"../../patterns/atoms-c_testimonials_quote_icon\\atoms-c_testimonials_quote_icon.rendered.html"},{"lineagePattern":"atoms-c_testimonials_client_avatar","lineagePath":"../../patterns/atoms-c_testimonials_client_avatar\\atoms-c_testimonials_client_avatar.rendered.html"}],"lineage":[{"lineagePattern":"atoms-c_testimonials_quote_icon","lineagePath":"../../patterns/atoms-c_testimonials_quote_icon\\atoms-c_testimonials_quote_icon.rendered.html"},{"lineagePattern":"atoms-c_testimonials_client_avatar","lineagePath":"../../patterns/atoms-c_testimonials_client_avatar\\atoms-c_testimonials_client_avatar.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-homepage\\templates-homepage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-homepage\\templates-homepage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms"},"patternExtension":"mustache","patternName":"Testimonials","patternPartial":"organisms-testimonials","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>
@@ -75,10 +151,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1550836691360">
+<script id="pl-js-polyfill-insert-1551032253343">
   (function() {
     if (self != top) {
-      var cb = '1550836691360';
+      var cb = '1551032253343';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -88,10 +164,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1550836691360">
+<script id="pl-js-insert-1551032253343">
   (function() {
     if (self != top) {
-      var cb = '1550836691360';
+      var cb = '1551032253343';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

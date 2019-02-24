@@ -9,7 +9,7 @@
   font-family: Poppins-Regular;
   src: url("../fonts/Poppins-Regular.otf") format("opentype");
 }
-p, ul, a, span, b, strong, button, i, hgroup, h1, h2, h3, h4, h5, h6{
+p, ul, li, div, a, span, b, strong, button, hgroup, h1, h2, h3, h4, h5, h6, input, textarea, select, button{
   font-family: Poppins-Regular !important;
 }
  ul{
@@ -37,6 +37,25 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: transparent;
 }
+/* company nav header responsive css start */
+.d-none-in-mg-lg{
+  display: none;
+}
+.sidenav {height: 100%;width: 0;position: fixed;z-index: 1;top: 0;left: 0;background: #333333fa !important;overflow-x: hidden;transition: 0.5s;padding-top: 60px;}
+.sidenav a {padding: 8px 8px 8px 32px;text-decoration: none;font-size: 16px;color: #fff;display: block;transition: all .3s ease-in-out;;border: 1px solid #ef3b00;margin: 5px 0;background: #ef3b00;}
+.sidenav a:first-child{background: transparent; border: 1px solid transparent; }
+.sidenav a:hover, .sidenav a:focus, .sidenav a:active {color: #f1f1f1; text-decoration: none; background: #333333; border: 1px solid #ef3b00;}
+.sidenav a:first-child:hover{border: 1px solid transparent;}
+.sidenav .closebtn {position: absolute;top: 0;right: 25px;font-size: 20px;margin-left: 50px;}
+.menu-bar-icon-li{padding: 0.8em 2em 0 0; cursor: pointer;}
+.menu-bar-icon-li span i{color: #fff; font-size: 28px;}
+.menu-bar-icon-li {position: absolute;top: 0;left: 20px;}
+.lg-hidden-right-tab{display: none;}
+.sidenav a span i {padding: 0 1em 0 0;}
+.width-250px{
+  width: 280px;
+}
+/* company nav header responsive css end */
 .text-center{
   text-align: center;
 }
@@ -72,6 +91,20 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     padding-right: 1rem;
 }
+/* .c-get-in-touch span i.get-in-touch-icon{
+  background: url('../images/get-in-touch.png') no-repeat;
+} */
+.c-get-in-touch span i{
+  vertical-align: sub;
+  height: 20px;
+}
+.get-in-touch-icon::before{
+  content: '';
+  background-image: url(../images/get-in-touch.png);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
 .nav-toggle {
     display: block;
     padding: 0.9rem 1rem 0.7rem;
@@ -87,12 +120,13 @@ body::-webkit-scrollbar-thumb {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
 }
+
 .c-primary-nav__list {
     display: none;
 }
 .c-primary-nav__link {
     display: block;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 .c-primary-nav__list{
@@ -112,9 +146,8 @@ body::-webkit-scrollbar-thumb {
   border: none;
   outline: none;
   color: #808080;
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: inherit;
-  font-family: inherit;
   margin: 0;
 }
 
@@ -152,10 +185,16 @@ body::-webkit-scrollbar-thumb {
 }
 .c-get-in-touch{
   background: #ef3b00;
-  color: #fff;
-  border-radius: 100px;
-  padding: 0 1em;
-  margin: 1em 0;
+      color: #fff;
+      border-radius: 100px;
+      padding: 0em 1em;
+      margin: 1em 0;
+      border: 2px solid transparent;
+}
+.c-get-in-touch:hover{
+  background: #191514;
+color: #fff;
+border: 2px solid #ef3b00;
 }
 
 /*Landing-section css start*/
@@ -227,3 +266,156 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 1em;
 }
 /* over the world css end */
+
+/* work with us form css start */
+.work-with-us-block{
+background:url(../images/contact-us-bg.png) no-repeat #454547;
+height: 100%;
+width: 100%;
+background-size: cover;
+background-position: 100%;
+padding: 4em 0;
+}
+.work-with-us-form-block{
+      padding: 2em 0 1em 0;
+}
+.work-with-us-hding-block h2{
+  padding: 0 0 0.3em 0;
+}
+.work-with-us-hding-block{
+
+}
+.work-with-us-form-inputs, .work-with-us-form-textarea{
+
+}
+.work-with-us-form-inputs .c-field{
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+.work-with-us-form-textarea .c-field{
+  flex-basis: 50%;
+}
+.work-with-us-form-inputs, .work-with-us-form-textarea{
+    padding: 0 0 1em 0;
+}
+.work-with-us-form-textarea textarea{
+  resize: none;
+  height: auto !important;
+}
+.work-with-us-form-submit-btn{
+
+}
+.work-with-us-form-inputs input{
+  height: 20px;
+  /* width: 100%; */
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.work-with-us-form-textarea textarea{
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.c-btn-org{
+  color: #fff;
+  border-radius: 100px;
+  padding: 0.5em 2em;
+  background: #ef3b00;
+  font-size: 16px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.c-btn-org:hover, .c-btn-org:focus{
+  color: #ef3b00;
+border-radius: 100px;
+padding: 0.5em 2em;
+background: #fff;
+border-color: transparent;
+}
+.work-with-us-form-textarea textarea {
+    width: 48% !important;
+}
+/* work with us form css end */
+
+/* company footer css start */
+.c-footer{
+  background: #2b2623;
+  padding: 2em 1em;
+  color: #adadad;
+}
+
+.c-footer-rights, .c-footer-social-links{
+  flex:1;
+}
+.c-footer-follow-us-ul{
+  float: right;
+  position: relative;
+  padding-right: 3em;
+}
+.c-footer-follow-us-ul .c-footer-follow-us-li{
+  display: inline-block;
+}
+.c-footer-rights{
+      padding-left: 3em;
+}
+.c-footer-follow-us-txt{
+  vertical-align: super;
+  color: #adadad;
+  cursor: default;
+}
+/* company footer css end */
+
+/* testimonials css start */
+.testimonials-block{
+  background: #f8f6f7;
+  padding: 3em 3em;
+}
+.testimonials-quote-bg{
+  background: url('../images/quote-bg.png') no-repeat;
+  background-size: cover;
+  margin: 0 0.5em;
+height: 225px;
+}
+.testimonials-quote-para span{
+  float: left;
+    width: 10%;
+}
+.testimonials-quote-para{
+      padding: 2em 1em;
+}
+.testimonials-author-avthar {
+    float: left;
+}
+.testimonials-author-name{
+  padding: 0.5em 1em;
+    float: left;
+    position: relative;
+}
+.testimonials-client-name{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.testimonials-client-dig{
+  font-size: 13px;
+  color: #676666;
+}
+/* testimonials css end */

@@ -1,4 +1,4 @@
-@media (min-width: 46.8em){
+@media (max-width: 46.8em){
   .c-primary-nav {
       display: block;
       margin-right: 1rem;
@@ -8,8 +8,8 @@
 }
 }
 
-/*mobile based css start from here*/
 
+/*mobile based css start from here*/
 @media only screen and (max-width: 600px) {
     .landing-hero-header {
     background: url(../images/landing-banner.png) no-repeat;
@@ -46,8 +46,79 @@ padding-left: 1em;
 .over-the-world-img img{
   width: 100%;
 }
+.work-with-us-form-block {
+    padding: 2em 2em 1em 2em;
 }
-
+.work-with-us-form-inputs input{
+  width: 90%;
+}
+.work-with-us-form-textarea textarea{
+  width: 83% !important;
+}
+.work-with-us-form-inputs .c-field {
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+}
+.c-footer-rights {
+    padding: 0.5em 0em;
+    text-align: center;
+}
+.c-footer-follow-us-ul {
+    float: none;
+    position: relative;
+    padding: 0.5em;
+    text-align: center;
+}
+.our-success-stories {
+    background: #f8f6f7;
+    padding: 1em 0;
+}
+.our-success-storie-block {
+    padding: 1em 2em;
+}
+.our-success-stories-hding-blog {
+    padding: 0 0.5em 2em 0.5em;
+}
+.work-with-us-hding-block {
+    padding: 0 0.6em;
+}
+.testimonials-block{display: none;}
+}
+@media only screen and (max-width: 768px) {
+.work-with-us-form-textarea textarea {
+    width: 84% !important;
+}
+.d-none-in-xs{
+  display: none;
+}
+.c-header {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
+}
+.c-header-xs-block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
+.d-none-in-mg-lg {
+    display: block;
+}
+.c-header-xs-block a{
+  flex-basis: 30%;
+  cursor: pointer;
+}
+.c-header-xs-block a i{
+  font-size: 21px;
+}
+.testimonials-quote-bg{
+  height: 350px;
+  background-position: center;
+  margin: 0;
+}
+}
 
 @media only screen and (max-width: 1024px) {
     .landing-hero-header {
@@ -89,6 +160,17 @@ padding-left: 1em;
     justify-content: center;
 }
 .over-the-world-main{
+  display: flex;
+}
+.work-with-us-form-inputs, .work-with-us-form-textarea {
+    display: flex;
+    justify-content: center;
+}
+.work-with-us-form-textarea .c-field {
+    flex-basis: 100%;
+}
+.c-footer-main{
+  box-sizing: border-box;
   display: flex;
 }
 }
