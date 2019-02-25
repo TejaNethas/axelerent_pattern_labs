@@ -82,7 +82,21 @@ padding-left: 1em;
 .work-with-us-hding-block {
     padding: 0 0.6em;
 }
-.testimonials-block{display: none;}
+.testimonials-block{}
+  .testimonials-block {
+    background: #f8f6f7;
+    padding: 3em 0.5em
+}
+.slick-prev, .slick-next {
+  position: absolute;
+      top: 100% !important;
+}
+.slick-prev {
+    left: 40% !important;
+}
+.slick-next {
+    right: 40% !important;
+}
 }
 @media only screen and (max-width: 768px) {
 .work-with-us-form-textarea textarea {
@@ -114,7 +128,7 @@ padding-left: 1em;
   font-size: 21px;
 }
 .testimonials-quote-bg{
-  height: 350px;
+  height: 240px;
   background-position: center;
   margin: 0;
 }

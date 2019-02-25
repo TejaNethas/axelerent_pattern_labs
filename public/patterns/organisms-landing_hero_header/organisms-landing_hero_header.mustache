@@ -30,7 +30,18 @@
         </div>
         <div class="page-scroll-bar text-center">
            <div class="page-scroll-down">
-              <a href="#">{{ main-section-scroll-down }} <span>{{> atoms-scroll_down }}</span></a>
+              <a href="#target-anchor-href" class="target-anchor-link">{{ main-section-scroll-down }} <span>{{> atoms-scroll_down }}</span></a>
            </div>
         </div>
      </section>
+
+     <script>
+      $('.target-anchor-link').click(function(e){
+       e.preventDefault();
+       var target = $($(this).attr('href'));
+       if(target.length){
+         var scrollTo = target.offset().top;
+         $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+       }
+      });
+     </script>

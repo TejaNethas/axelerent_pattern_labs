@@ -393,7 +393,7 @@ border-color: transparent;
   background: url('../images/quote-bg.png') no-repeat;
   background-size: cover;
   margin: 0 0.5em;
-height: 225px;
+  height: 225px;
 }
 .testimonials-quote-para span{
   float: left;
@@ -417,5 +417,13 @@ height: 225px;
 .testimonials-client-dig{
   font-size: 13px;
   color: #676666;
+}
+.slick-prev::before{
+  content: '';
+  background-image: url('../images/testimonial-left.png') no-repeat !important;
+}
+.slick-next::before{
+  content: '';
+  background-image: url('../images/testimonial-right.png') no-repeat !important;
 }
 /* testimonials css end */
