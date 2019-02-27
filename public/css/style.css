@@ -242,12 +242,14 @@ border: 2px solid #ef3b00;
 }
 .our-success-storie-1{
   justify-content: space-around;
+  text-align: center;
 }
 .our-success-storie-block{
   padding: 2em;
 }
 .our-success-story-content{
-  padding: 1em 0.5em 2em 0;
+  padding: 1em 0.5em 1em 2em;
+  text-align: left;
 }
 .our-success-storie-1 .our-success-story-content h4{
   color: #484340;
@@ -389,6 +391,10 @@ border-color: transparent;
   background: #f8f6f7;
   padding: 3em 3em;
 }
+ul.testimonials-block li{
+      outline: -webkit-focus-ring-color auto 0px !important;
+      cursor: pointer;
+}
 .testimonials-quote-bg{
   background: url('../images/quote-bg.png') no-repeat;
   background-size: cover;
@@ -396,8 +402,10 @@ border-color: transparent;
   height: 225px;
 }
 .testimonials-quote-para span{
-  float: left;
-    width: 10%;
+  width: 100%;
+  color: #757373;
+  font-style: italic;
+  text-indent: 3em;
 }
 .testimonials-quote-para{
       padding: 2em 1em;
@@ -425,5 +433,12 @@ border-color: transparent;
 .slick-next::before{
   content: '';
   background-image: url('../images/testimonial-right.png') no-repeat !important;
+}
+.testimonials-quote-icon{
+  content: '';
+  display: block;
+  height: 30px;
+  background-image: url('../images/quote.png');
+  background-repeat: no-repeat;
 }
 /* testimonials css end */
